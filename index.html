@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Marketing Lviv 2025</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f5f5f5;
+}
+
+/* Header */
+header{
+    height: 100vh;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLse4H__BbKQMw7oajv46pw9P5ABwa04VuR83m1wErLg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:white;
+    position: relative;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top:0; left:0; right:0; bottom:0;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+header .hero-text{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+header h1{
+    font-size: 50px;
+    margin: 0;
+}
+
+header p{
+    font-size: 22px;
+    margin: 0;
+}
+
+/* Buttons */
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#ff4d4d;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:bold;
+    max-width: 250px;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background:#e03e3e;
+}
+
+.btn-group{
+    display:flex;
+    gap:15px;
+    justify-content:center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+/* Nav */
+nav{
+    background:#eee;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    margin:15px;
+    text-decoration:none;
+    font-weight:bold;
+    color:black;
+}
+
+/* Sections */
+section{
+    padding:80px 40px;
+    max-width:900px;
+    margin:auto;
+    line-height:1.6;
+    position: relative;
+    border-bottom:1px solid #ddd;
+    border-radius:10px;
+    overflow:hidden;
+    color:white;
+}
+
+#about{
+    background: url('https://virt.lac.lviv.ua/pluginfile.php/1/theme_archaius/slides_images_19/910120/DSC00934_2.JPG') center/cover no-repeat;
+    position: relative;
+}
+
+#about::before {
+    content: '';
+    position: absolute;
+    top:0; left:0; right:0; bottom:0;
+    background: rgba(0,0,0,0.5); /* затемнення для кращої видимості тексту */
+    z-index: 1;
+}
+
+#about p{
+    position: relative;
+    z-index: 2;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+/* Subjects */
+#subjects{
+    background: url('https://virt.lac.lviv.ua/pluginfile.php/1/theme_archaius/slides_images_21/910120/P1644023_2.JPG') center/cover no-repeat;
+    background-size: cover;
+}
+
+/* Card group for SMM & Online */
+.card-group{
+    display:flex;
+    gap:20px;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin-bottom:30px;
+}
+
+.card{
+    flex: 1 1 300px;
+    background: rgba(31,60,136,0.85);
+    border-radius:15px;
+    text-align:center;
+    padding:40px 20px;
+    color:white;
+    font-weight:bold;
+    font-size:18px;
+    transition: 0.3s;
+    min-width: 250px;
+}
+
+.card:hover{
+    background: rgba(31,60,136,1);
+}
+
+.card a{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 25px;
+    background:white;
+    color:#1f3c88;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    transition: 0.3s;
+}
+
+.card a:hover{
+    background:#ddd;
+}
+
+/* Lists (subjects and careers) */
+ul{
+    background: rgba(255,255,255,0.9);
+    padding:20px;
+    border-radius:10px;
+    list-style:none;
+}
+
+ul li{
+    margin-bottom:10px;
+    padding:10px;
+    background:#f0f0f0;
+    border-radius:6px;
+    color:black;
+}
+
+/* Career Section */
+#career{
+    background: url('https://jobs.ua/uploads/articles/vremya-dlya-nachala-biznesa.jpg') center/cover no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+#career::before {
+    content: '';
+    position: absolute;
+    top:0; left:0; right:0; bottom:0;
+    background: rgba(0,0,0,0.45); /* затемнення */
+    z-index: 1;
+}
+
+#career ul{
+    position: relative;
+    z-index: 2;
+    background: rgba(255,255,255,0.85);
+    color: black;
+}
+
+/* Contact */
+#contact{
+    background:#f5f5f5;
+    color:black;
+    border:none;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Section Titles */
+section h2{
+    margin-bottom:30px;
+    text-align:center;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="hero-text">
+    <h1>Marketing Lviv 2025-2026</h1>
+    <p>Вступ на спеціальність маркетинг</p>
+    <p>Львівський торговельно-економічний університет</p>
+    <div class="btn-group">
+      <a href="#contact" class="btn">Записатись на програму</a>
+      <a href="#about" class="btn">Дізнатись більше</a>
+    </div>
+  </div>
+</header>
+
+<nav>
+<a href="#about">Про програму</a>
+<a href="#subjects">Предмети</a>
+<a href="#career">Кар'єра</a>
+<a href="#contact">Контакти</a>
+</nav>
+
+<section id="about">
+<h2>Про програму</h2>
+<p>Програма «Маркетинг» у Львівському торговельно-економічному університеті готує фахівців, здатних ефективно просувати бренди та товари у цифровому та офлайн-середовищі. Ви навчитеся створювати стратегії просування, аналізувати ринок, працювати з клієнтами та використовувати сучасні маркетингові інструменти. Програма поєднує теоретичні знання з практичними проєктами та кейсами від провідних компаній.</p>
+</section>
+
+<section id="subjects">
+<h2>Предмети</h2>
+
+<div class="card-group">
+  <div class="card">
+    SMM та тренди
+    <a href="#career">Детальніше</a>
+  </div>
+  <div class="card">
+    Робота онлайн
+    <a href="#career">Детальніше</a>
+  </div>
+</div>
+
+<ul>
+  <li>Основи маркетингу та брендингу</li>
+  <li>Аналітика та дослідження ринку</li>
+  <li>Цифровий маркетинг та SEO</li>
+  <li>Реклама в соцмережах та Google Ads</li>
+  <li>Електронна комерція</li>
+  <li>Комунікації та PR</li>
+</ul>
+</section>
+
+<section id="career">
+<h2>Кар'єра</h2>
+
+<ul>
+  <li>SMM-спеціаліст, контент-маркетолог, менеджер з реклами</li>
+  <li>Бренд-менеджер або маркетинговий аналітик</li>
+  <li>Менеджер із цифрового маркетингу та SEO</li>
+  <li>Фрілансер або підприємець у сфері онлайн-продажів</li>
+  <li>Стратег у маркетингових агенціях та стартапах</li>
+</ul>
+</section>
+
+<section id="contact">
+<h2>Контакти</h2>
+<p>Email: marketing@lteu.edu.ua</p>
+<p>Instagram: @marketing.lviv</p>
+<p>Телефон: +380 32 123 45 67</p>
+<p>Адреса: вулиця Туган-Барановського, 10, Львів</p>
+</section>
+
+<footer>
+<p>© 2026 Marketing Lviv</p>
+</footer>
+
+</body>
+</html>
